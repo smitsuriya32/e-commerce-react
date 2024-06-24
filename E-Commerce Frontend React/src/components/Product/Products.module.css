@@ -1,0 +1,133 @@
+/* src/components/ProductCard.module.css */
+.jobs {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 15px;
+  text-align: center;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #e91e63;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.prodDetailsBtn {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color */
+  text-align: center; /* Center the text inside the button */
+  padding: 10px 20px; /* Top and bottom padding, left and right padding */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from link */
+  font-size: 16px; /* Text size */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.prodDetailsBtn:hover,
+.prodDetailsBtn:focus {
+  background-color: #0056b3; /* Darker shade on hover/focus for feedback */
+  color: white; /* Maintain text color */
+  text-decoration: none; /* Ensure underline does not reappear on hover/focus */
+}
+
+.button,
+.prodDetailsBtn {
+  display: inline-block; /* Allows for side-by-side display */
+  margin: 5px; /* Adds space between the buttons */
+}
+
+.button {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+}
+
+.prodDetailsBtn {
+  background-color: #17a2b8; /* Light blue background */
+  color: white; /* White text */
+}
+
+.button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.prodDetailsBtn:hover {
+  background-color: #138496; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardContent {
+    padding: 10px;
+  }
+
+  .name,
+  .description,
+  .price {
+    font-size: 1rem;
+  }
+}

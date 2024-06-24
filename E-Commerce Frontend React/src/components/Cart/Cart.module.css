@@ -1,0 +1,133 @@
+.cartContainer {
+  padding: 30px; /* Increased padding for more space */
+  background-color: #f8f9fa; /* Lighter shade for a fresher look */
+  border-radius: 10px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow for depth */
+  max-width: 100%;
+  margin: 20px auto; /* Added top and bottom margin for better spacing */
+}
+
+.cartList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 25px; /* Increased spacing between items */
+  padding: 20px; /* More padding for a better layout */
+  border-radius: 10px; /* Consistent rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Softer shadow */
+}
+
+.itemImage {
+  width: 100px; /* Larger images for better visibility */
+  height: auto;
+  border-radius: 6px; /* Slightly more rounded */
+  margin-right: 20px; /* More space between image and details */
+}
+
+.itemDetails {
+  flex-grow: 1;
+}
+
+.itemName,
+.itemDescription,
+.itemPrice {
+  margin: 8px 0; /* More vertical spacing for clarity */
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+}
+
+.quantityButton {
+  background-color: #17a2b8; /* Changed to a teal color for a fresh look */
+  color: white;
+  border: none;
+  padding: 8px 12px; /* Slightly larger for easier interaction */
+  margin: 0 8px; /* More space between buttons */
+  border-radius: 5px; /* Consistent rounded corners */
+  cursor: pointer;
+  transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+.quantityButton:hover {
+  background-color: #138496; /* Darker shade on hover */
+}
+
+.quantity {
+  min-width: 40px; /* Slightly wider for better readability */
+  text-align: center;
+}
+
+.checkoutSection {
+  text-align: right;
+  margin-top: 30px; /* More space above the checkout section */
+}
+
+.totalPrice {
+  font-size: 22px; /* Slightly larger font size for emphasis */
+  font-weight: bold;
+}
+
+.checkoutButton {
+  background-color: #dc3545; /* Changed to a red color for urgency */
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Larger button for easier clicking */
+  border-radius: 5px; /* Consistent rounded corners */
+  cursor: pointer;
+  font-size: 18px; /* Larger font size for visibility */
+  transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+.checkoutButton:hover {
+  background-color: #c82333; /* Darker shade on hover */
+}
+
+.closeButton {
+  display: block; /* Make the button a block element to allow margin auto */
+  margin: 20px auto; /* Center the button horizontally with auto margin */
+  padding: 10px 20px; /* Padding for a larger click area */
+  background-color: #dc3545; /* Red color for attention */
+  color: white; /* White text color for contrast */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Larger font size for readability */
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* Fixed width for a square shape */
+  height: auto; /* Auto height based on content */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center; /* Center text and elements inside the modal */
+}
+
+@media (max-width: 768px) {
+  .cartItem {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .itemImage {
+    margin-bottom: 15px;
+  }
+
+  .checkoutSection {
+    text-align: center;
+  }
+}
